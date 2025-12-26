@@ -1,0 +1,32 @@
+/* NAVBAR */
+.navbar { min-height: 70px; }
+.logo { color: #1F3A6B; text-decoration: none; }
+.profile-icons { font-size: 20px; }
+
+/* BUTTONS */
+.btn-primary { background-color: #1F3A6B; border: none; }
+
+/* HERO */
+.hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+.hero .container { position: relative; z-index: 1; }
+
+/* FEATURES ICONS */
+.explore i { font-size: 40px; color: #1F3A6B; }
+
+/* CARDS */
+.card-img-top { height: 200px; object-fit: contain; transition: 0.4s ease; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+
+/* FORM CONTROL WIDTH */
+@media (min-width: 992px) { .form-control { width: 250px; } }
